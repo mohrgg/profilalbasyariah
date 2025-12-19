@@ -1,59 +1,72 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# Profile SMK Al-Basyariah - Laravel CMS
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+Website Profil Sekolah SMK Al-Basyariah yang dibangun menggunakan Laravel 11 dan Filament CMS 3. Proyek ini menggantikan versi statis sebelumnya dengan sistem yang lebih dinamis, modern, dan mudah dikelola.
 
-## About Laravel
+## 🚀 Fitur Utama
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+- **Landing Page Modern**: Desain premium menggunakan Tailwind CSS dengan animasi scroll (AOS).
+- **CMS Berita (Filament)**: Dashboard admin untuk mengelola berita, pengumuman, dan prestasi sekolah tanpa menyentuh kode.
+- **Halaman Detail Berita**: Fitur baca selengkapnya untuk konten berita yang lebih mendalam.
+- **Desain Responsif**: Tampilan optimal di berbagai perangkat (Mobile, Tablet, Desktop).
+- **SEO Friendly**: Struktur HTML semantik dan meta tags dasar.
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+## 🛠️ Tech Stack
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+- **Backend**: [Laravel 11](https://laravel.com)
+- **CMS**: [Filament v3](https://filamentphp.com)
+- **Frontend**: Tailwind CSS & Blade Templating
+- **Database**: MySQL
+- **Animasi**: AOS (Animate On Scroll)
 
-## Learning Laravel
+## 📋 Prasyarat
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework. You can also check out [Laravel Learn](https://laravel.com/learn), where you will be guided through building a modern Laravel application.
+- PHP >= 8.2
+- Composer
+- PHP Extension: `intl` (Sangat disarankan untuk fitur penuh Filament)
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+## ⚙️ Instalasi
 
-## Laravel Sponsors
+1. **Clone Repositori**:
+   ```bash
+   git clone https://github.com/mohrgg/profilalbasyariah.git
+   cd profilalbasyariah
+   ```
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+2. **Instal Dependensi**:
+   ```bash
+   composer install
+   npm install && npm run build
+   ```
 
-### Premium Partners
+3. **Konfigurasi Environment**:
+   Salin `.env.example` menjadi `.env` dan sesuaikan kredensial database Anda.
+   ```bash
+   cp .env.example .env
+   php artisan key:generate
+   ```
 
-- **[Vehikl](https://vehikl.com)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Redberry](https://redberry.international/laravel-development)**
-- **[Active Logic](https://activelogic.com)**
+4. **Migrasi Database**:
+   ```bash
+   php artisan migrate
+   ```
 
-## Contributing
+5. **Storage Link**:
+   ```bash
+   php artisan storage:link
+   ```
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+6. **Jalankan Aplikasi**:
+   ```bash
+   php artisan serve
+   ```
 
-## Code of Conduct
+## 🔐 Akses Admin
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+Gunakan kredensial berikut untuk masuk ke portal admin (`/admin`):
+- **URL**: `http://localhost:8000/admin`
+- **Default Email**: `admin@admin.com`
+- **Default Password**: `password`
 
-## Security Vulnerabilities
+## 📄 Lisensi
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+Proyek ini dibuat untuk keperluan profil sekolah SMK Al-Basyariah.
